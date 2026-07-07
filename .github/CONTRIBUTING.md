@@ -1,14 +1,14 @@
 # Contributing / Внесок до проєкту
 
-Дякуємо за інтерес до ArtistsHub. Ось як внести свій внесок.
+Дякуємо за інтерес до **TravelTrucks**. Ось як внести свій внесок.
 
 ## Як внести внесок
 
 ### 1. Клонування та гілка
 
 ```bash
-git clone https://github.com/VuToV-Mykola/goit-fullstack-team-javascript-web-rest-responsive-app.git
-cd goit-fullstack-team-javascript-web-rest-responsive-app
+git clone https://github.com/VuToV-Mykola/campers.git
+cd campers
 git checkout -b feature/назва-фічі
 ```
 
@@ -20,9 +20,15 @@ npm install
 
 ### 3. Розробка
 
-- Працюйте згідно з [COMMUNITY_STANDARDS.md](./COMMUNITY_STANDARDS.md)
-- Дотримуйтесь Stylelint, Code Guide
-- Перевіряйте валідаторами (W3C HTML/CSS, JSHint)
+```bash
+npm run dev
+```
+
+Відкрийте [http://localhost:3000](http://localhost:3000) у Chrome.
+
+- Дотримуйтесь макета [Campers (Figma)](https://www.figma.com/design/q9il1hHac6kzbFAoxWSxet/Campers--Copy-?node-id=48730-474&m=dev)
+- Використовуйте CSS Modules, App Router, TypeScript
+- Перевіряйте фільтрацію, Load More та форму бронювання
 
 ### 4. Коміт
 
@@ -44,9 +50,11 @@ git push origin feature/назва-фічі
 ## Чекліст перед PR
 
 - [ ] `npm run build` проходить без помилок
-- [ ] Немає `console.log` у production
-- [ ] Код відповідає Stylelint
+- [ ] `npm run lint` без критичних попереджень
+- [ ] Немає помилок у консолі браузера
+- [ ] Фільтрація та пагінація працюють коректно
+- [ ] Немає `console.log` у production-коді
 
 ## Питання
 
-Створіть [Issue](https://github.com/VuToV-Mykola/goit-fullstack-team-javascript-web-rest-responsive-app/issues) для обговорення.
+Створіть [Issue](https://github.com/VuToV-Mykola/campers/issues) для обговорення.

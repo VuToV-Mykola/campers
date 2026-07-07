@@ -1,0 +1,247 @@
+.section {
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 64px 64px 80px;
+}
+
+.top {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.infoColumn {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summaryCard,
+.detailsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #f7f7f7;
+}
+
+.summaryHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title,
+.price,
+.detailsTitle,
+.reviewsTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.location svg {
+  width: 16px;
+  height: 16px;
+}
+
+.description {
+  color: #475467;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.detailsCard {
+  gap: 16px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.badge {
+  padding: 12px 18px;
+  border-radius: 100px;
+  background: #f2f4f7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background: #dadde1;
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+}
+
+.specRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.specRow dt,
+.specRow dd {
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  margin-top: 88px;
+}
+
+.reviewsSection {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f7f7f7;
+}
+
+.reviewPerson {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #829b91;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.reviewMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviewer {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.comment {
+  color: #475467;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.emptyReviews {
+  color: #475467;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bookingSection {
+  flex-shrink: 0;
+  width: 641px;
+}
+
+@media (max-width: 1023px) {
+  .section {
+    padding: 48px 24px 64px;
+  }
+
+  .top,
+  .bottom {
+    flex-direction: column;
+  }
+
+  .bookingSection {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 32px 16px 48px;
+  }
+
+  .bottom {
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .summaryCard,
+  .detailsCard,
+  .review {
+    padding: 16px;
+  }
+
+  .title,
+  .price,
+  .detailsTitle,
+  .reviewsTitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
