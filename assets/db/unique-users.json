@@ -1,26 +1,14 @@
 {
-  "total_unique_users": 5,
-  "unique_visitors": 6,
+  "total_unique_users": 0,
+  "unique_visitors": 0,
   "stargazers": {
-    "count": 5,
-    "users": [
-  "TaliaZcoder",
-  "VuToV-Mykola",
-  "frankman74",
-  "juliavutova-oss",
-  "mikeeve02-ship-it"
-]
+    "count": 0,
+    "users": []
   },
   "manual_likes": {
     "count": 0,
     "users": []
   },
-  "all_engaged_users": [
-  "TaliaZcoder",
-  "VuToV-Mykola",
-  "frankman74",
-  "juliavutova-oss",
-  "mikeeve02-ship-it"
-],
-  "updated_at": "2026-07-07 14:07:03"
+  "all_engaged_users": [],
+  "updated_at": "2026-07-07 16:54:01"
 }
