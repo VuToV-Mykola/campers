@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- Українською: Декларація типу документу HTML5 / English: HTML5 document type declaration -->
+<html lang="en">
+  <!-- Українською: Вказує мову сторінки / English: Specifies page language -->
+  <!--!!! HEAD !!!-->
+  <head>
+    <meta charset="UTF-8">
+    <!-- Українською: Кодування символів (UTF-8 підтримує всі мови) / English: Character encoding (UTF-8 supports all languages) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Українською: Налаштування адаптивного дизайну / English: Responsive design settings -->
+
+    <meta name="description" content="Page description">
+    <!-- Українською: Опис сторінки для SEO / English: Page description for SEO -->
+    <!-- Preconnect до API та зображень (PageSpeed) -->
+    <link rel="preconnect" href="https://ftp.goit.study" crossorigin="">
+    <link rel="preconnect" href="https://sound-wave.b.goit.study" crossorigin="">
+    <link rel="preload" href="./img/hero/bg-image-mobile.webp" as="image" media="(max-width: 767px) and (max-resolution: 191dpi)">
+    <link rel="preload" href="./img/hero/bg-image-mobile@2x.webp" as="image" media="(max-width: 767px) and (min-resolution: 192dpi)">
+    <link rel="preload" href="./img/hero/bg-image-tablet.webp" as="image" media="(min-width: 768px) and (max-width: 1439px) and (max-resolution: 191dpi)">
+    <link rel="preload" href="./img/hero/bg-image-tablet@2x.webp" as="image" media="(min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi)">
+    <link rel="preload" href="./img/hero/bg-image-desktop.webp" as="image" media="(min-width: 1440px) and (max-resolution: 191dpi)">
+    <link rel="preload" href="./img/hero/bg-image-desktop@2x.webp" as="image" media="(min-width: 1440px) and (min-resolution: 192dpi)">
+    <!--!!! MODERN NORMALIZE !!!-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'">
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </noscript>
+    <!--!!! FONTS !!!-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'">
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    </noscript>
+
+    <!--!!! STYLES (ArtistsHub Figma) !!!-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--!!! TITLE !!!-->
+    <title>ArtistsHub — адаптивний веб-додаток</title>
+    <!-- Українською: Заголовок сторінки (вкладка браузера) / English: Page title (browser tab) -->
+  </head>
+  <!--!!! BODY !!!-->
+  <body class="page">
+    <header class="page-header">
+      <!-- Українською: Верхня частина сторінки (лого, навігація) / English: Top section (logo, navigation) -->
+      <load src="./partials/header.html" icon-path="./img/sprite.svg#logo" />
+    </header>
+    <!--!!! MAIN !!!-->
+    <main class="page-main">
+      <!-- Українською: Основний вміст сторінки / English: Main page content -->
+      <!-- Loads the specified .html file -->
+      <!--!!! hero !!!-->
+      <load src="./partials/hero.html" />
+      <!--!!! artists !!!-->
+      <load src="./partials/artists.html" />
+
+      <!--!!! about us !!!-->
+      <load src="./partials/about.html" />
+      <!--!!! feedback !!!-->
+      <load src="./partials/feedback.html" />
+      <!--!!! artist details modal !!!-->
+      <load src="./partials/artist-modal.html" />
+    </main>
+    <!--!!! footer !!!-->
+    <footer class="page-footer">
+      <!-- Українською: Нижня частина сторінки (копірайт, посилання) / English: Bottom section (copyright, links) -->
+      <load src="./partials/footer.html" />
+    </footer>
+    <!-- Українською: Кнопка "Нагору" / English: "To Top" button -->
+    <load src="./partials/totop.html" />
+    <!--!!! SCRIPT !!!-->
+    <script type="module" src="./main.js"></script>
+    <!-- Українською: Підключення JavaScript з відкладеним виконанням / English: JavaScript with deferred execution -->
+  </body>
+</html>
