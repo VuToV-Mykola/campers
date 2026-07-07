@@ -6,6 +6,7 @@
   display: flex;
   gap: 64px;
   align-items: flex-start;
+  width: 100%;
   max-width: 1312px;
   margin: 0 auto;
   padding: 0 64px;
@@ -16,15 +17,21 @@
   flex: 1;
   flex-direction: column;
   gap: 32px;
+  min-width: 0;
 }
 
 .list {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.list li {
+  min-width: 0;
 }
 
 .loadMore {
@@ -73,6 +80,13 @@
   color: #475467;
   font-size: 16px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 1439px) {
+  .layout {
+    gap: 32px;
+    padding: 0 32px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
